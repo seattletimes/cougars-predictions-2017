@@ -5,10 +5,30 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <%= t.include("partials/_nav.html") %>
 
-    <responsive-child>
-      <!-- content goes here -->
-    </responsive-child>
+    <main class="content">
+      <h1 class="headline">Cougars Predictions</h1>
+      <div class="schedule">
+        <section class="row">
+          <ul class="games">
+        <% json.schedule.forEach(function(r){ %>
+          <li data-game="<%= r.game %>">
+            <div class="meta">
+              Game <%= r.game %>
+              <%= r.location == "home" ? "VS." : "@" %>
+              <%= r.opponent %>
+              <%= json.logos[r.opponent].logo %>
+            </div>
+          </li>
+        <% }); %>
+          </ul>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- <%= t.include("partials/_navBottom.html") %> -->
 
     <script src="app.js" async></script>
     <% if (json.project.production) { %>
