@@ -1,12 +1,141 @@
 @import "seattletimes";
 
+@wsu-crimson: #981e32;
+
 main {
   .headline {
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
+    font-family: 'Paytone One', sans-serif;
   }
+
+  .chatter {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.container {
+  .display-flex();
+
+  @media @mobile {
+    display: block;
+  }
+}
+
+.schedule {
+  .flex(1);
+  position: relative;
+  max-width: 700px;
+  margin-right: 20px;
+  margin-left: 40px;
+  cursor: pointer;
 }
 
 .games {
   list-style: none;
+  .logo {
+    height: 80px;
+  }
+  .logo.prediction {
+    height: 25px;
+  }
+}
+
+.info {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.images {
+  .display-flex();
+  justify-content: center;
+  padding-bottom: 20px;
+  text-align: center;
+
+  .location-container {
+    .display-flex();
+    align-items: center;
+    padding: 25px;
+    font-size: 30px;
+  }
+
+  img {
+      opacity: 0.7;
+      filter: alpha(opacity=40);
+  }
+
+  img:hover {
+      opacity: 1.0;
+      filter: alpha(opacity=100);
+  }
+
+  .home:hover, .away:hover {
+    font-weight: bold;
+  }
+}
+
+.predictions {
+  display: none;
+
+  .show-predictions & {
+    display: block;
+    background: @df-off-white;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  .experts {
+    .display-flex();
+    justify-content: flex-start;
+
+    .experts-box {
+      background-color: @df-middle-gray;
+      // border: none;
+      padding: 5px 16px;
+      color: black;
+      margin-bottom: 7px;
+      margin-right: 5px;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      font-size: 16px;
+      height: 40px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.user-pick {
+  height: 40px;
+}
+
+.info {
+  font-size: 23px;
+}
+
+.tooltip {
+  display: block;
+  height: 250px;
+  width: 400px;
+  background: @df-light-gray;
+  border-radius: 4px;
+  position: sticky; top: 50px;
+  margin-top: 20px;
+  border: 3px solid @wsu-crimson;
+
+  h1 {
+    text-align: center;
+  }
+
+  .summary {
+    padding-left: 10px;
+  }
+}
+
+.row {
+  background: @df-light-gray;
+  margin-bottom: 20px;
+  border: 3px solid @wsu-crimson;
 }
