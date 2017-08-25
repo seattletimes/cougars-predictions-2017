@@ -38,6 +38,15 @@ main {
   }
 }
 
+.outer {
+  .display-flex();
+  justify-content: center;
+
+  @media @tablet {
+    display: block;
+  }
+}
+
 .container {
   .display-flex();
   justify-content: center;
@@ -161,6 +170,12 @@ main {
     margin-left: 10px;
   }
 
+  .clear-pick {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
   .show-predictions & {
     display: block;
     background: #ffffff;
@@ -220,22 +235,16 @@ main {
   display: block;
   height: 400px;
   width: 400px;
-  background-color: @df-off-white;
-  -radius: 4px;
   position: sticky; top: 50px;
   font-family: 'Paytone One', sans-serif;
   color:black;
-  box-shadow:
-    0 20px 52px 0 fade(black, 30%),
-    0 6px 8px -4px fade(black, 10%);
-  border: 1px solid @df-light-gray;
 
   @media @tablet {
     width: 100%
   }
 
   h1 {
-    text-align: center;
+    text-align: left;
 
     @media @mobile {
       font-size: 30px;
@@ -270,7 +279,7 @@ main {
   }
 
   .hidden.predictions {
-    display: none;
+    display: block;
     margin-left: 10px;
 
     .show-record & {
