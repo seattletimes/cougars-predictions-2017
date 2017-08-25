@@ -3,32 +3,80 @@
   <head>
     <%= t.include("partials/_head.html", grunt.data.json) %>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Paytone+One|Oswald:700,400,300' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <%= t.include("partials/_nav.html") %>
 
     <main class="content">
       <h1 class="headline">Cougars Predictions</h1>
+      <div class="chatter"> Some chatter will go here eventually </div>
+      <div class="container">
       <div class="schedule">
-        <section class="row">
-          <ul class="games">
+        <ul class="games">
         <% json.schedule.forEach(function(r){ %>
-          <li data-game="<%= r.game %>">
+          <li data-game="<%= r.game %>" class="row">
             <div class="meta">
-              Game <%= r.game %>
-              <%= r.location == "home" ? "VS." : "@" %>
-              <%= r.opponent %>
-              <%= json.logos[r.opponent].logo %>
+              <div class="info">
+              <strong> WEEK <%= r.game %> </strong>  <br> <%= r.date %> <br><%= r.station %>
+              </div>
+               <br>
+               <div class="images">
+
+              <% if (r.location == "home") { %>
+              <div class="home">
+                <img class="logo team" src="./assets/wsu.png" data-game="<%= r.game %>" data-prediction="W"><div class="team"> Cougars</div>
+              </div>
+              <div class="location-container">
+                <div class="location"><%= r.location == "home" ? "vs." : "@" %></div>
+              </div>
+              <div class="away">
+                <img class="logo team" src="./assets/<%= json.logos[r.opponent].logo %>" data-game="<%= r.game %>" data-prediction="L"> <div class="team"><%= r.opponent %></div>
+              </div>
+            <%  } else { %>
+              <div class="home">
+                 <img class="logo team" src="./assets/wsu.png" data-game="<%= r.game %>" data-prediction="W"> <div class="team"> Cougars</div>
+              </div>
+              <div class="location-container">
+                <div class="location"><%= r.location == "home" ? "VS." : "@" %></div>
+              </div>
+              <div class="away">
+                <img class="logo team" src="./assets/<%= json.logos[r.opponent].logo %>" data-game="<%= r.game %>" data-prediction="L"><div class="team"><%= r.opponent %></div>
+              </div>
+            <%  } %>
+                </div>
+            </div>
+            <div class="predictions">
+              <div class="decision"> Your pick: <img class="user-pick"></div>
+              <div class="experts">
+                <% for (var k in json.experts) { %>
+                  <div class="experts-box">
+                    <%= json.experts[k].name %>
+                    <img class="logo prediction" src="./assets/<%= r[k] == "W" ? "wsu.png" : json.logos[r.opponent].logo %>">
+                  </div>
+                <% } %>
+              </div>
             </div>
           </li>
         <% }); %>
           </ul>
-        </section>
-
       </div>
+      <div class="tooltip">
+        <h1> Cougars 2017-2018 </h1>
+        <div class="summary"> Your prediction:<div class="record"> 0-0 </div> </div>
+        <div class="summary experts"> See staff predictions </div>
+        <div class="hidden predictions">
+            <% for (var k in json.experts) { %>
+              <div class="record prediction">
+                <%= json.experts[k].name %>: <%= json.experts[k].wins %> - <%= json.experts[k].loss %>
+              </div>
+            <% }; %>
+        </div>
+      </div>
+    </div>
     </main>
 
-    <!-- <%= t.include("partials/_navBottom.html") %> -->
+    <%= t.include("partials/_navBottom.html") %>
 
     <script src="app.js" async></script>
     <% if (json.project.production) { %>
