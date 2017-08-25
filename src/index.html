@@ -9,7 +9,8 @@
     <%= t.include("partials/_nav.html") %>
 
     <main class="content">
-      <h1 class="headline">Cougars Predictions</h1>
+      <h1 class="headline">Make your pick</h1>
+      <h2 class="subhead"> Cougars Season Predictor</h2>
       <div class="chatter"> Some chatter will go here eventually </div>
       <div class="container">
       <div class="schedule">
@@ -47,7 +48,7 @@
                 </div>
             </div>
             <div class="predictions">
-              <div class="decision"> Your pick: <img class="user-pick"></div>
+              <div class="decision"> Your pick: <img class="user-pick"> <button class="clear-pick" data-game="<%= r.game %>">Clear pick</button></div>
               <div class="experts">
                 <% for (var k in json.experts) { %>
                   <div class="experts-box">
@@ -63,15 +64,17 @@
       </div>
       <div class="tooltip">
         <h1> Cougars 2017-2018 </h1>
-        <div class="summary"> Your prediction:<div class="record"> 0-0 </div> </div>
-        <div class="summary experts"> See staff predictions </div>
-        <div class="hidden predictions">
-            <% for (var k in json.experts) { %>
-              <div class="record prediction">
-                <%= json.experts[k].name %>: <%= json.experts[k].wins %> - <%= json.experts[k].loss %>
-              </div>
-            <% }; %>
-        </div>
+        <div class="content">
+          <div class="summary"> Your record prediction:<div class="record"> 0-0 </div> </div>
+          <div class="experts button"> See staff predictions </div>
+          <div class="hidden predictions">
+              <% for (var k in json.experts) { %>
+                <div class="record prediction">
+                  <%= json.experts[k].name %>: <%= json.experts[k].wins %> - <%= json.experts[k].loss %>
+                </div>
+              <% }; %>
+          </div>
+      </div>
       </div>
     </div>
     </main>
