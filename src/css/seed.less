@@ -2,6 +2,9 @@
 
 @wsu-crimson: #981e32;
 
+body {
+
+}
 main {
   .headline {
     text-align: center;
@@ -13,11 +16,13 @@ main {
     text-align: center;
     font-size: 20px;
     margin-bottom: 40px;
+    font-family: 'Paytone One', sans-serif;
   }
 }
 
 .container {
   .display-flex();
+  justify-content: center;
 
   @media @mobile {
     display: block;
@@ -31,6 +36,8 @@ main {
   margin-right: 20px;
   margin-left: 40px;
   cursor: pointer;
+  font-family: 'Paytone One', sans-serif;
+  color: black;
 }
 
 .games {
@@ -43,9 +50,17 @@ main {
   }
 }
 
+.meta {
+  .display-flex();
+  justify-content:space-around;
+  box-shadow:
+    0 20px 20px 0 fade(black, 30%),
+    0 6px 8px -4px fade(black, 10%);
+  border: 1px solid @df-light-gray;
+}
+
 .info {
   padding-top: 10px;
-  padding-left: 10px;
 }
 
 .images {
@@ -53,6 +68,7 @@ main {
   justify-content: center;
   padding-bottom: 20px;
   text-align: center;
+  padding-top: 10px;
 
   .location-container {
     .display-flex();
@@ -61,12 +77,12 @@ main {
     font-size: 30px;
   }
 
-  img {
+  img:hover {
       opacity: 0.7;
       filter: alpha(opacity=40);
   }
 
-  img:hover {
+  img {
       opacity: 1.0;
       filter: alpha(opacity=100);
   }
@@ -84,6 +100,10 @@ main {
     background: @df-off-white;
     padding-top: 5px;
     padding-left: 5px;
+    box-shadow:
+      0 20px 25px 0 fade(black, 30%),
+      0 6px 8px -4px fade(black, 10%);
+    border: 1px solid @df-light-gray;
   }
 
   .experts {
@@ -91,8 +111,8 @@ main {
     justify-content: flex-start;
 
     .experts-box {
-      background-color: @df-middle-gray;
-      // border: none;
+      // background-color: @df-middle-gray;
+      // : none;
       padding: 5px 16px;
       color: black;
       margin-bottom: 7px;
@@ -100,9 +120,9 @@ main {
       text-decoration: none;
       display: inline-block;
       text-align: center;
-      font-size: 16px;
+      font-size: 14px;
       height: 40px;
-      border-radius: 4px;
+      -radius: 4px;
     }
   }
 }
@@ -117,13 +137,18 @@ main {
 
 .tooltip {
   display: block;
-  height: 250px;
+  height: 500px;
   width: 400px;
-  background: @df-light-gray;
-  border-radius: 4px;
+  background-color: @df-off-white;
+  -radius: 4px;
   position: sticky; top: 50px;
   margin-top: 20px;
-  border: 3px solid @wsu-crimson;
+  font-family: 'Paytone One', sans-serif;
+  color:black;
+  box-shadow:
+    0 20px 52px 0 fade(black, 30%),
+    0 6px 8px -4px fade(black, 10%);
+  border: 1px solid @df-light-gray;
 
   h1 {
     text-align: center;
@@ -131,11 +156,32 @@ main {
 
   .summary {
     padding-left: 10px;
+    font-size: 23px;
+  }
+  .summary.experts{
+    background-color: @df-light-gray;
+    cursor: pointer;
+    padding: 5px 16px;
+    color: black;
+    margin-bottom: 7px;
+    margin-right: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 19px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .hidden.predictions{
+    display: block;
+    margin-left: 10px;
   }
 }
 
 .row {
-  background: @df-light-gray;
-  margin-bottom: 20px;
-  border: 3px solid @wsu-crimson;
+  background: @df-off-white;
+  margin-bottom: 40px;
 }
