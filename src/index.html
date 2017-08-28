@@ -8,9 +8,11 @@
   <body>
     <%= t.include("partials/_nav.html") %>
 
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+
     <main class="content">
       <div class="outer"> 
-        
+
         <h1 class="headline">Cougars pick 'em</h1>
         <h2 class="subhead">How will WSU do in 2017?</h2>
         <p class="chatter">
@@ -75,7 +77,7 @@
             <h1> Cougars 2017-2018 </h1>
             <div class="content">
               <div class="summary"> Your record prediction:<div class="record"> 0-0 </div> </div>
-              <div class="show-experts button"> See staff record predictions</div>
+              <div class="show-experts button">See staff record predictions</div>
               <div class="staff records">
                   <% for (var k in json.experts) { %>
                     <div class="record prediction">
@@ -90,7 +92,7 @@
         <h2>Staff predictions</h2>
         <div class="expert-opinions">
           <% for (var n in json.experts) { %>
-          <% var expert = json.experts[n]; console.log(expert); %>
+          <% var expert = json.experts[n] %>
           <div class="expert">
             <div class="wrapper">
               <h3><%= expert.name %></h3>
