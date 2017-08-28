@@ -9,13 +9,14 @@
     <%= t.include("partials/_nav.html") %>
 
     <main class="content">
-      <h1 class="headline">Make your pick</h1>
-      <h2 class="subhead"> Cougars Season Predictor</h2>
-      <p class="chatter">
-        The Cougars were solid last season, but failed to deliver in critical games. After an 8-5 season, Luke Falk and the Cougs are back and ready to compete for a Pac-12 North title. Think you’ve got what it takes to guess the WSU's 2017 season correctly? Put your football knowledge to the test by picking the winner of each game this season, then see how your preseason picks stack up against our experts at The Seattle Times.
-      </p>
-
       <div class="outer"> 
+        
+        <h1 class="headline">Cougars pick 'em</h1>
+        <h2 class="subhead">How will WSU do in 2017?</h2>
+        <p class="chatter">
+          The Cougars were solid last season, but failed to deliver in critical games. After an 8-5 season, Luke Falk and the Cougs are back and ready to compete for a Pac-12 North title. Think you’ve got what it takes to guess the WSU's 2017 season correctly? Put your football knowledge to the test by picking the winner of each game this season, then see how your preseason picks stack up against our experts at The Seattle Times.
+        </p>
+
         <div class="container">
           <div class="schedule">
             <ul class="games">
@@ -74,8 +75,8 @@
             <h1> Cougars 2017-2018 </h1>
             <div class="content">
               <div class="summary"> Your record prediction:<div class="record"> 0-0 </div> </div>
-              <div class="experts button"> See staff predictions </div>
-              <div class="hidden predictions">
+              <div class="show-experts button"> See staff record predictions</div>
+              <div class="staff records">
                   <% for (var k in json.experts) { %>
                     <div class="record prediction">
                       <%= json.experts[k].name %>: <%= json.experts[k].wins %> - <%= json.experts[k].loss %>

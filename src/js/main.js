@@ -4,10 +4,6 @@ var dot = require("./lib/dot");
 
 $(".row").forEach(el => el.addEventListener("click", () => el.classList.add("show-predictions")));
 
-var button = $.one(".experts.button");
-var staffPredictions = $.one(".hidden.predictions")
-button.addEventListener("click", staffPredictions.classList.add("show-record"));
-
 var userPredictions = {};
 
 var setQuery = hash => Object.keys(hash).map(k => k + "=" + hash[k]).join("&");
@@ -81,3 +77,5 @@ if (hash.picks) {
   }
   updateScore();
 }
+
+$.one(".show-experts").addEventListener("click", () => $.one(".staff.records").classList.add("show"));

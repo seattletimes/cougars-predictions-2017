@@ -45,11 +45,13 @@ main {
 
   @media @tablet {
     display: block;
+    padding: 8px;
   }
 }
 
 .container {
   .display-flex();
+  .align-items(flex-start);
 
   @media @tablet {
     display: block;
@@ -240,16 +242,17 @@ main {
 
 .tooltip {
   display: block;
-  height: 400px;
   width: 400px;
   position: -webkit-sticky;
   position: sticky;
   top: 50px;
   font-family: 'Paytone One', sans-serif;
   color:black;
+  height: auto;
 
   @media @tablet {
-    width: 100%
+    width: 100%;
+    position: static;
   }
 
   h1 {
@@ -270,7 +273,8 @@ main {
     padding-left: 10px;
     font-size: 23px;
   }
-  .experts.button {
+
+  .show-experts {
     background-color: @team-color;
     cursor: pointer;
     padding: 5px 16px;
@@ -281,17 +285,16 @@ main {
     display: inline-block;
     text-align: center;
     font-size: 19px;
-    height: 40px;
     border-radius: 4px;
     margin-left: 10px;
     margin-top: 10px;
   }
 
-  .hidden.predictions {
-    display: block;
+  .staff.records {
     margin-left: 10px;
+    display: none;
 
-    .show-record & {
+    &.show {
       display: block;
     }
   }
@@ -305,12 +308,25 @@ main {
 .expert-opinions {
   .display-flex();
   .flex-wrap(wrap);
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid @df-light-gray;
+
+  @media @tablet {
+    display: block;
+  }
 
   .expert {
     .flex(0 0 33%);
     font-size: 16px;
     padding: 0 16px 16px 0;
     border-right: 1px solid @df-light-gray;
+
+    @media @tablet {
+      .flex(0 0 50%);
+      border-right: none;
+      padding: 0;
+    }
 
     &:nth-child(3n) {
       border-right: none;
@@ -319,6 +335,14 @@ main {
     .wrapper {
       background: white;
       padding: 16px;
+
+      @media @tablet {
+        padding: 0 0 24px;
+      }
+    }
+
+    h3 {
+      margin: 0;
     }
   }
 }
