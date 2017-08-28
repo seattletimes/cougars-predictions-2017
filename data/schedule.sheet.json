@@ -8,7 +8,8 @@
     "stef": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 2,
@@ -19,7 +20,8 @@
     "stef": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "L"
+    "scott": "L",
+    "paul": "W"
   },
   {
     "game": 3,
@@ -30,7 +32,8 @@
     "stef": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 4,
@@ -41,7 +44,8 @@
     "stef": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 5,
@@ -52,7 +56,8 @@
     "stef": "L",
     "larry": "L",
     "matt": "L",
-    "scott": "L"
+    "scott": "L",
+    "paul": "L"
   },
   {
     "game": 6,
@@ -63,7 +68,8 @@
     "stef": "W",
     "larry": "L",
     "matt": "W",
-    "scott": "L"
+    "scott": "L",
+    "paul": "L"
   },
   {
     "game": 7,
@@ -74,7 +80,8 @@
     "stef": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 8,
@@ -85,7 +92,8 @@
     "stef": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 9,
@@ -96,7 +104,8 @@
     "stef": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 10,
@@ -107,7 +116,8 @@
     "stef": "W",
     "larry": "L",
     "matt": "L",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 11,
@@ -118,7 +128,8 @@
     "stef": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "L"
+    "scott": "L",
+    "paul": "L"
   },
   {
     "game": 12,
@@ -129,6 +140,7 @@
     "stef": "L",
     "larry": "L",
     "matt": "L",
-    "scott": "L"
+    "scott": "L",
+    "paul": "L"
   }
 ]

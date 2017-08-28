@@ -1,6 +1,6 @@
 @import "seattletimes";
 
-@wsu-crimson: #981e32;
+@team-color: #981e32;
 
 body {
 
@@ -10,7 +10,7 @@ main {
     text-align: center;
     font-size: 70px;
     font-family: 'Paytone One', sans-serif;
-    color: @wsu-crimson;
+    color: @team-color;
     margin-bottom: 0px;
 
     @media @mobile {
@@ -30,17 +30,18 @@ main {
   }
 
   .chatter {
-    text-align: center;
-    font-size: 20px;
     margin-bottom: 40px;
-    font-family: 'Paytone One', sans-serif;
     color: black;
+    max-width: 600px;
+    margin: auto;
+    display: block;
   }
 }
 
 .outer {
-  .display-flex();
-  justify-content: center;
+  max-width: 1024px;
+  padding: 20px;
+  margin: auto;
 
   @media @tablet {
     display: block;
@@ -49,9 +50,6 @@ main {
 
 .container {
   .display-flex();
-  justify-content: center;
-  max-width: 1024px;
-  padding: 20px;
 
   @media @tablet {
     display: block;
@@ -59,15 +57,20 @@ main {
 }
 
 .row {
+
+  box-shadow:
+    0 24px 20px 0 fade(black, 8%),
+    0 6px 8px -4px fade(black, 12%);
+  border: 1px solid @df-light-gray;
+
   @media @mobile {
     width: 100%;
   }
 }
 
 .schedule {
-  .flex(1);
   position: relative;
-  flex: 1 1 700px;
+  .flex(1 1 700px);
   margin-right: 20px;
   cursor: pointer;
   font-family: 'Paytone One', sans-serif;
@@ -100,11 +103,7 @@ main {
 
 .meta {
   .display-flex();
-  justify-content:space-around;
-  box-shadow:
-    0 20px 20px 0 fade(black, 30%),
-    0 6px 8px -4px fade(black, 10%);
-  border: 1px solid @df-light-gray;
+  .justify-content(space-around);
 
   @media @mobile {
     display: block;
@@ -193,18 +192,14 @@ main {
     padding-top: 5px;
     padding-left: 5px;
     padding-bottom: 20px;
-    box-shadow:
-      0 20px 25px 0 fade(black, 30%),
-      0 6px 8px -4px fade(black, 10%);
-    border: 1px solid @df-light-gray;
   }
 
   .experts {
     .display-flex();
-    justify-content: flex-start;
+    .justify-content(flex-start);
 
     @media @mobile {
-      flex-wrap: wrap;
+      .flex-wrap(wrap);
     }
 
     .experts-box {
@@ -247,7 +242,9 @@ main {
   display: block;
   height: 400px;
   width: 400px;
-  position: sticky; top: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
   font-family: 'Paytone One', sans-serif;
   color:black;
 
@@ -274,7 +271,7 @@ main {
     font-size: 23px;
   }
   .experts.button {
-    background-color: @wsu-crimson;
+    background-color: @team-color;
     cursor: pointer;
     padding: 5px 16px;
     color: @df-off-white;
@@ -303,4 +300,25 @@ main {
 .row {
   background: @df-off-white;
   margin-bottom: 40px;
+}
+
+.expert-opinions {
+  .display-flex();
+  .flex-wrap(wrap);
+
+  .expert {
+    .flex(0 0 33%);
+    font-size: 16px;
+    padding: 0 16px 16px 0;
+    border-right: 1px solid @df-light-gray;
+
+    &:nth-child(3n) {
+      border-right: none;
+    }
+
+    .wrapper {
+      background: white;
+      padding: 16px;
+    }
+  }
 }
