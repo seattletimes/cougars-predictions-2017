@@ -37,7 +37,9 @@ var onClickIcon = function() {
   var game = this.getAttribute("data-game");
   var prediction = this.getAttribute("data-prediction");
   var src = this.getAttribute("src");
+  this.classList.remove("faded");
   var row = closest(this, ".row");
+  $(".team.logo", row).filter(el => el != this).pop().classList.add("faded");
   row.classList.add("pick-set");
   var pickImage = $.one(".user-pick", row);
   pickImage.src = src;
@@ -71,10 +73,11 @@ if (hash.picks) {
     var result = parseInt(binary.slice(i, i + 2), 2);
     if (result) {
       userPredictions[game] = result == 1 ? "W" : "L";
-      var row = $.one(`.row[data-game="${game}"]`)
+      var row = $.one(`.row[data-game="${game}"]`);
       row.classList.add("show-predictions", "pick-set");
       var original = $.one(`img[data-prediction="${userPredictions[game]}"]`, row);
       $.one(".user-pick", row).src = original.src;
+      $.one(`img:not([data-prediction="${userPredictions[game]}"])`, row).classList.add("faded");
     }
   }
   updateScore();

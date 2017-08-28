@@ -94,6 +94,10 @@ main {
   .logo {
     height: 80px;
 
+    &.faded {
+      opacity: .4;
+    }
+
     @media @mobile {
       height: 60px;
     }
@@ -147,12 +151,12 @@ main {
     }
   }
 
-  img:hover {
-      opacity: 0.7;
+  img {
+    transition: transform .2s ease-in-out;
   }
 
-  img {
-      opacity: 1.0;
+  img:hover {
+    transform: scale(1.2);
   }
 
   .away, .home{
