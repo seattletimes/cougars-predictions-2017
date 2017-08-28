@@ -2,19 +2,19 @@
   "s3": {
     "stage": {
       "bucket": "projects-staging.seattletimes.com",
-      "path": ""
+      "path": "prejudicious-discoloration"
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2017/cougars-pick-em"
     }
   },
   "title": "",
   "description": "",
-  "url": "",
+  "url": "http://projects.seattletimes.com/2017/cougars-pick-em/",
   "image": "assets/social.jpg",
-  "sheets": [],
+  "sheets": ["1QG8oFX_4vY_HaIZCsDV7J_eDp8DD8XcCL9CHSHYZq40"],
   "standout": false,
-  "embedded": true,
+  "embedded": false,
   "production": false
 }

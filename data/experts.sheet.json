@@ -1,0 +1,32 @@
+{
+  "stef": {
+    "name": "Stefanie Loh",
+    "comment": "The Cougars go into the season with a veteran presence at every position. This is the culmination of the last four years, and it should bring about one of the best seasons WSU has had in school history.\n",
+    "wins": 10,
+    "loss": 2
+  },
+  "larry": {
+    "name": "Larry Stone",
+    "comment": "If the Cougars can just win their opener – something  they’ve never done in five seasons under Mike Leach, with some horrible losses thrown in -- they’re on their way to another solid season that will put them in their third straight bowl game. And if they can pull off an upset or two, it could be an elite one. They have an elite quarterback in Luke Falk, a deep and talented running corps, and a solid offensive line. As usual with the Cougars, it will come down to defense, and with nine starters back, that looks promising, too.",
+    "wins": 8,
+    "loss": 4
+  },
+  "scott": {
+    "name": "Scott",
+    "comment": "The Cougars will have an up-and-down season that will be highlighted by a home win over Stanford.\n",
+    "wins": 7,
+    "loss": 5
+  },
+  "paul": {
+    "name": "Paul",
+    "comment": "The Cougars finally will win a season opener under Mike Leach, and end their string of losses to FCS teams. Expect them to contend late for the Pac-12 North title and reach another decent bowl game such as the Holiday Bowl.",
+    "wins": 8,
+    "loss": 4
+  },
+  "matt": {
+    "name": "Matt",
+    "comment": "With Luke Falk returning for his senior season, the Cougs are once again brimming with potential. The key for them will be avoiding any pitfalls in the non-conference schedule, which they haven't been able to do over the past couple of seasons. That convincing win over Stanford last year proved how potent WSU's offense could be. Unfortunately, in games that mattered most (Colorado, Washington, Minnesota in the Holiday Bowl) the Cougs didn't show up. We'll see if that can change this season. ",
+    "wins": 9,
+    "loss": 3
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "Montana State": {
+    "logo": "montanastate.png"
+  },
+  "Boise State": {
+    "logo": "boisestate.png"
+  },
+  "Oregon State": {
+    "logo": "oregonstate.png"
+  },
+  "Nevada": {
+    "logo": "nevada.png"
+  },
+  "USC": {
+    "logo": "usc.png"
+  },
+  "Oregon": {
+    "logo": "oregon.png"
+  },
+  "Cal": {
+    "logo": "cal.png"
+  },
+  "Colorado": {
+    "logo": "colorado.png"
+  },
+  "Arizona": {
+    "logo": "arizona.png"
+  },
+  "Stanford": {
+    "logo": "stanford.png"
+  },
+  "Utah": {
+    "logo": "utah.png"
+  },
+  "UW": {
+    "logo": "uw.png"
+  }
+}
