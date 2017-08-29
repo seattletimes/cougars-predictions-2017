@@ -6,9 +6,11 @@
     "date": "Sept. 2, 7:30 p.m.",
     "station": "FS1",
     "stef": "W",
+    "Jon": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 2,
@@ -17,9 +19,11 @@
     "date": "Sept. 9, 7:30 p.m.",
     "station": "ESPN",
     "stef": "W",
+    "Jon": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "L"
+    "scott": "L",
+    "paul": "W"
   },
   {
     "game": 3,
@@ -28,9 +32,11 @@
     "date": "Sept. 16, 2:30 p.m.",
     "station": "Pac-12 Networks",
     "stef": "W",
+    "Jon": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 4,
@@ -39,9 +45,11 @@
     "date": "Sept. 29. 7:30 p.m.",
     "station": "TBD",
     "stef": "W",
+    "Jon": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 5,
@@ -50,9 +58,11 @@
     "date": "Sept. 29, 7:30 p.m.",
     "station": "ESPN",
     "stef": "L",
+    "Jon": "W",
     "larry": "L",
     "matt": "L",
-    "scott": "L"
+    "scott": "L",
+    "paul": "L"
   },
   {
     "game": 6,
@@ -61,9 +71,11 @@
     "date": "Oct. 7, TBD",
     "station": "TBD",
     "stef": "W",
+    "Jon": "W",
     "larry": "L",
     "matt": "W",
-    "scott": "L"
+    "scott": "L",
+    "paul": "L"
   },
   {
     "game": 7,
@@ -72,9 +84,11 @@
     "date": "Sept. 13, 7:30 p.m.",
     "station": "ESPN",
     "stef": "W",
+    "Jon": "L",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 8,
@@ -83,9 +97,11 @@
     "date": "Oct. 21, TBD",
     "station": "TBD",
     "stef": "W",
+    "Jon": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 9,
@@ -94,9 +110,11 @@
     "date": "Oct. 28, TBD",
     "station": "TBD",
     "stef": "W",
+    "Jon": "W",
     "larry": "W",
     "matt": "W",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 10,
@@ -105,9 +123,11 @@
     "date": "Nov. 4, TBD",
     "station": "TBD",
     "stef": "W",
+    "Jon": "W",
     "larry": "L",
     "matt": "L",
-    "scott": "W"
+    "scott": "W",
+    "paul": "W"
   },
   {
     "game": 11,
@@ -116,9 +136,11 @@
     "date": "Nov. 11, TBD",
     "station": "TBD",
     "stef": "W",
+    "Jon": "L",
     "larry": "W",
     "matt": "W",
-    "scott": "L"
+    "scott": "L",
+    "paul": "L"
   },
   {
     "game": 12,
@@ -127,8 +149,10 @@
     "date": "Nov. 25, TBD",
     "station": "TBD",
     "stef": "L",
+    "Jon": "L",
     "larry": "L",
     "matt": "L",
-    "scott": "L"
+    "scott": "L",
+    "paul": "L"
   }
 ]

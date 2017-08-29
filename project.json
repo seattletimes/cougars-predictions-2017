@@ -2,19 +2,19 @@
   "s3": {
     "stage": {
       "bucket": "projects-staging.seattletimes.com",
-      "path": "pastoral-wavering"
+      "path": "prejudicious-discoloration"
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2017/cougars-pick-em"
     }
   },
-  "title": "",
-  "description": "",
-  "url": "",
-  "image": "assets/social.jpg",
+  "title": "Cougars pick 'em: How will WSU do in 2017?",
+  "description": "Think you’ve got what it takes to guess WSU's 2017 season correctly?",
+  "url": "http://projects.seattletimes.com/2017/cougars-pick-em/",
+  "image": "assets/wsusocial.jpg",
   "sheets": ["1QG8oFX_4vY_HaIZCsDV7J_eDp8DD8XcCL9CHSHYZq40"],
   "standout": false,
-  "embedded": true,
-  "production": false
+  "embedded": false,
+  "production": true
 }

@@ -8,77 +8,106 @@
   <body>
     <%= t.include("partials/_nav.html") %>
 
-    <main class="content">
-      <h1 class="headline">Make your pick</h1>
-      <h2 class="subhead"> Cougars Season Predictor</h2>
-      <div class="chatter"> Some chatter will go here eventually </div>
-      <div class="outer"> 
-      <div class="container">
-      <div class="schedule">
-        <ul class="games">
-        <% json.schedule.forEach(function(r){ %>
-          <li data-game="<%= r.game %>" class="row">
-            <div class="meta">
-              <div class="info">
-              <strong> WEEK <%= r.game %> </strong>  <br> <%= r.date %> <br><%= r.station %>
-              </div>
-               <br>
-               <div class="images">
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
 
-              <% if (r.location == "home") { %>
-              <div class="home">
-                <img class="logo team" src="./assets/wsu.png" data-game="<%= r.game %>" data-prediction="W"><div class="team"> Cougars</div>
-              </div>
-              <div class="location-container">
-                <div class="location"><%= r.location == "home" ? "vs." : "@" %></div>
-              </div>
-              <div class="away">
-                <img class="logo team" src="./assets/<%= json.logos[r.opponent].logo %>" data-game="<%= r.game %>" data-prediction="L"> <div class="team"><%= r.opponent %></div>
-              </div>
-            <%  } else { %>
-              <div class="home">
-                 <img class="logo team" src="./assets/wsu.png" data-game="<%= r.game %>" data-prediction="W"> <div class="team"> Cougars</div>
-              </div>
-              <div class="location-container">
-                <div class="location"><%= r.location == "home" ? "VS." : "@" %></div>
-              </div>
-              <div class="away">
-                <img class="logo team" src="./assets/<%= json.logos[r.opponent].logo %>" data-game="<%= r.game %>" data-prediction="L"><div class="team"><%= r.opponent %></div>
-              </div>
-            <%  } %>
-                </div>
-            </div>
-            <div class="predictions">
-              <div class="decision"> Your pick: <img class="user-pick"> <button class="clear-pick" data-game="<%= r.game %>">Clear pick</button></div>
-              <div class="experts">
-                <% for (var k in json.experts) { %>
-                  <div class="experts-box">
-                    <%= json.experts[k].name %>
-                    <img class="logo prediction" src="./assets/<%= r[k] == "W" ? "wsu.png" : json.logos[r.opponent].logo %>">
+    <main class="content">
+      <div class="outer"> 
+
+        <h1 class="headline">Cougars pick 'em</h1>
+        <h2 class="subhead">How will WSU do in 2017?</h2>
+        <p class="chatter">
+          The Cougars were solid last season, but failed to deliver in critical games. After an 8-5 season, Luke Falk and the Cougs are back and ready to compete for a Pac-12 North title. Think you’ve got what it takes to guess the WSU's 2017 season correctly? Put your football knowledge to the test by picking the winner of each game this season, then see how your preseason picks stack up against our experts at The Seattle Times.
+        </p>
+
+        <div class="container">
+          <div class="schedule">
+            <ul class="games">
+            <% json.schedule.forEach(function(r){ %>
+              <li data-game="<%= r.game %>" class="row">
+                <div class="meta">
+                  <div class="info">
+                  <strong> WEEK <%= r.game %> </strong>  <br> <%= r.date %> <br><%= r.station %>
                   </div>
-                <% } %>
+                   <br>
+                   <div class="images">
+
+                  <% if (r.location == "home") { %>
+                  <div class="home">
+                    <img class="logo team" src="./assets/wsu.png" data-game="<%= r.game %>" data-prediction="W"><div class="team"> Cougars</div>
+                  </div>
+                  <div class="location-container">
+                    <div class="location"><%= r.location == "home" ? "vs." : "@" %></div>
+                  </div>
+                  <div class="away">
+                    <img class="logo team" src="./assets/<%= json.logos[r.opponent].logo %>" data-game="<%= r.game %>" data-prediction="L"> <div class="team"><%= r.opponent %></div>
+                  </div>
+                <%  } else { %>
+                  <div class="home">
+                     <img class="logo team" src="./assets/wsu.png" data-game="<%= r.game %>" data-prediction="W"> <div class="team"> Cougars</div>
+                  </div>
+                  <div class="location-container">
+                    <div class="location"><%= r.location == "home" ? "VS." : "@" %></div>
+                  </div>
+                  <div class="away">
+                    <img class="logo team" src="./assets/<%= json.logos[r.opponent].logo %>" data-game="<%= r.game %>" data-prediction="L"><div class="team"><%= r.opponent %></div>
+                  </div>
+                <%  } %>
+                    </div>
+                </div>
+                <div class="predictions">
+                  <div class="decision">
+                    Your pick:
+                    <img class="user-pick">
+                    <button class="clear-pick" data-game="<%= r.game %>">&times; clear</button>
+                  </div>
+                  <div class="experts">
+                    <% for (var k in json.experts) { %>
+                      <div class="experts-box">
+                        <%= json.experts[k].name %>
+                        <img class="logo prediction" src="./assets/<%= r[k] == "W" ? "wsu.png" : json.logos[r.opponent].logo %>">
+                      </div>
+                    <% } %>
+                  </div>
+                </div>
+              </li>
+            <% }); %>
+              </ul>
+          </div>
+          <div class="tooltip">
+            <h1> Cougars 2017-2018 </h1>
+            <div class="content">
+              <div class="summary"> Your record prediction:<div class="record"> 0-0 </div> </div>
+              <div class="show-experts button">See staff record predictions</div>
+              <div class="staff records">
+                  <% for (var k in json.experts) { %>
+                    <div class="record prediction">
+                      <%= json.experts[k].name %>: <%= json.experts[k].wins %> - <%= json.experts[k].loss %>
+                    </div>
+                  <% }; %>
               </div>
             </div>
-          </li>
-        <% }); %>
-          </ul>
-      </div>
-      <div class="tooltip">
-        <h1> Cougars 2017-2018 </h1>
-        <div class="content">
-          <div class="summary"> Your record prediction:<div class="record"> 0-0 </div> </div>
-          <div class="experts button"> See staff predictions </div>
-          <div class="hidden predictions">
-              <% for (var k in json.experts) { %>
-                <div class="record prediction">
-                  <%= json.experts[k].name %>: <%= json.experts[k].wins %> - <%= json.experts[k].loss %>
-                </div>
-              <% }; %>
           </div>
+        </div>
+
+        <h2>Staff predictions</h2>
+        <div class="expert-opinions">
+          <% for (var n in json.experts) { %>
+          <% var expert = json.experts[n] %>
+          <div class="expert">
+            <div class="wrapper">
+              <h3><%= expert.name %></h3>
+              <h4><%= expert.title %></h4>
+              <div class="record">
+                Season prediction: <b><%= expert.wins %> - <%= expert.loss %></b>
+              </div>
+              <p class="prediction">
+                <%= expert.comment %>
+            </div>
+          </div>
+          <% } %>
+        </div>
+
       </div>
-      </div>
-    </div>
-  </div>
     </main>
 
     <%= t.include("partials/_navBottom.html") %>
