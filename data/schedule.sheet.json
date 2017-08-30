@@ -7,10 +7,12 @@
     "station": "FS1",
     "stef": "W",
     "Jon": "W",
+    "bob": "W",
     "larry": "W",
     "matt": "W",
     "scott": "W",
-    "paul": "W"
+    "paul": "W",
+    "sean": "W"
   },
   {
     "game": 2,
@@ -20,10 +22,12 @@
     "station": "ESPN",
     "stef": "W",
     "Jon": "W",
+    "bob": "W",
     "larry": "W",
     "matt": "W",
     "scott": "L",
-    "paul": "W"
+    "paul": "W",
+    "sean": "W"
   },
   {
     "game": 3,
@@ -33,10 +37,12 @@
     "station": "Pac-12 Networks",
     "stef": "W",
     "Jon": "W",
+    "bob": "W",
     "larry": "W",
     "matt": "W",
     "scott": "W",
-    "paul": "W"
+    "paul": "W",
+    "sean": "W"
   },
   {
     "game": 4,
@@ -46,10 +52,12 @@
     "station": "TBD",
     "stef": "W",
     "Jon": "W",
+    "bob": "W",
     "larry": "W",
     "matt": "W",
     "scott": "W",
-    "paul": "W"
+    "paul": "W",
+    "sean": "W"
   },
   {
     "game": 5,
@@ -59,10 +67,12 @@
     "station": "ESPN",
     "stef": "L",
     "Jon": "W",
+    "bob": "L",
     "larry": "L",
     "matt": "L",
     "scott": "L",
-    "paul": "L"
+    "paul": "L",
+    "sean": "L"
   },
   {
     "game": 6,
@@ -72,10 +82,12 @@
     "station": "TBD",
     "stef": "W",
     "Jon": "W",
+    "bob": "L",
     "larry": "L",
     "matt": "W",
     "scott": "L",
-    "paul": "L"
+    "paul": "L",
+    "sean": "W"
   },
   {
     "game": 7,
@@ -85,10 +97,12 @@
     "station": "ESPN",
     "stef": "W",
     "Jon": "L",
+    "bob": "W",
     "larry": "W",
     "matt": "W",
     "scott": "W",
-    "paul": "W"
+    "paul": "W",
+    "sean": "W"
   },
   {
     "game": 8,
@@ -98,10 +112,12 @@
     "station": "TBD",
     "stef": "W",
     "Jon": "W",
+    "bob": "W",
     "larry": "W",
     "matt": "W",
     "scott": "W",
-    "paul": "W"
+    "paul": "W",
+    "sean": "W"
   },
   {
     "game": 9,
@@ -111,10 +127,12 @@
     "station": "TBD",
     "stef": "W",
     "Jon": "W",
+    "bob": "W",
     "larry": "W",
     "matt": "W",
     "scott": "W",
-    "paul": "W"
+    "paul": "W",
+    "sean": "W"
   },
   {
     "game": 10,
@@ -124,10 +142,12 @@
     "station": "TBD",
     "stef": "W",
     "Jon": "W",
+    "bob": "L",
     "larry": "L",
     "matt": "L",
     "scott": "W",
-    "paul": "W"
+    "paul": "W",
+    "sean": "L"
   },
   {
     "game": 11,
@@ -137,10 +157,12 @@
     "station": "TBD",
     "stef": "W",
     "Jon": "L",
+    "bob": "W",
     "larry": "W",
     "matt": "W",
     "scott": "L",
-    "paul": "L"
+    "paul": "L",
+    "sean": "W"
   },
   {
     "game": 12,
@@ -150,9 +172,11 @@
     "station": "TBD",
     "stef": "L",
     "Jon": "L",
+    "bob": "L",
     "larry": "L",
     "matt": "L",
     "scott": "L",
-    "paul": "L"
+    "paul": "L",
+    "sean": "W"
   }
 ]

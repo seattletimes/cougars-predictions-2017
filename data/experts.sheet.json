@@ -13,6 +13,19 @@
     "loss": 4,
     "title": "Sports columnist"
   },
+  "matt": {
+    "name": "Matt Calkins",
+    "comment": "With Luke Falk returning for his senior season, the Cougs are once again brimming with potential. The key for them will be avoiding any pitfalls in the non-conference schedule, which they haven't been able to do over the past couple of seasons. That convincing win over Stanford last year proved how potent WSU's offense could be. Unfortunately, in games that mattered most (Colorado, Washington, Minnesota in the Holiday Bowl) the Cougs didn't show up. We'll see if that can change this season. ",
+    "wins": 9,
+    "loss": 3,
+    "title": "Sports columnist"
+  },
+  "bob": {
+    "name": "Bob Condotta",
+    "comment": "Quarterbacks are everything in college football and the Cougars have a good and experienced one in Luke Falk that should mean another solid season and decent bowl trip. But the losses late last season to Colorado and UW showed that WSU also still has some work to do build up the all-around roster to get to the point of truly contending. ",
+    "wins": 8,
+    "loss": 4
+  },
   "scott": {
     "name": "Scott Hanson",
     "comment": "The Cougars will have an up-and-down season that will be highlighted by a home win over Stanford.\n",
@@ -27,18 +40,18 @@
     "loss": 4,
     "title": "Sports editor"
   },
-  "matt": {
-    "name": "Matt Calkins",
-    "comment": "With Luke Falk returning for his senior season, the Cougs are once again brimming with potential. The key for them will be avoiding any pitfalls in the non-conference schedule, which they haven't been able to do over the past couple of seasons. That convincing win over Stanford last year proved how potent WSU's offense could be. Unfortunately, in games that mattered most (Colorado, Washington, Minnesota in the Holiday Bowl) the Cougs didn't show up. We'll see if that can change this season. ",
-    "wins": 9,
-    "loss": 3,
-    "title": "Sports columnist"
-  },
   "Jon": {
     "name": "Jon Wilner",
     "comment": "WSU plays its first five games at home, and it had better win most, if not all of them. The back end of the schedule is daunting, with five of the last seven on the road. Leach has never started 4-1, much less 5-0, in his Pullman tenure. His best start is 3-2. This year, with all five at home, 3-2 won’t cut it.",
     "wins": 9,
     "loss": 3,
     "title": "College sports reporter"
+  },
+  "sean": {
+    "name": "Sean Quinton",
+    "comment": "The Cougars showed flashes of greatness a year ago, but ultimately came up short when it mattered most. With a veteran squad led by senior Luke Falk and All-American left tackle Cody O'Connell, WSU will be in the conversation for the Pac-12 North title all season. But, can they win the big ones this season?",
+    "wins": 10,
+    "loss": 1,
+    "title": "Sports Producer"
   }
 }
